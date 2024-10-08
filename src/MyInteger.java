@@ -1,17 +1,17 @@
 class MyInteger {
     private int value;
 
-    // Конструктор, который создает объект типа MyInteger для указанного значения типа int
+
     public MyInteger(int value) {
         this.value = value;
     }
 
-    // Getter-метод, который возвращает значение типа int
+
     public int getValue() {
         return value;
     }
 
-    // Методы isEven(), isOdd() и isPrime()
+
     public boolean isEven() {
         return value % 2 == 0;
     }
@@ -32,7 +32,7 @@ class MyInteger {
         return true;
     }
 
-    // Статические методы isEven(int), isOdd(int) и isPrime(int)
+
     public static boolean isEven(int value) {
         return value % 2 == 0;
     }
@@ -53,7 +53,7 @@ class MyInteger {
         return true;
     }
 
-    // Статические методы isEven(MyInteger), isOdd(MyInteger) и isPrime(MyInteger)
+
     public static boolean isEven(MyInteger myInteger) {
         return myInteger.isEven();
     }

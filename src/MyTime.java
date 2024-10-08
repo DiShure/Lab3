@@ -6,7 +6,7 @@ class MyTime {
     private int minute;
     private int second;
 
-    // Безаргументный конструктор, который создает объект типа MyTime для текущего времени
+
     public MyTime() {
         Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
         this.hour = calendar.get(Calendar.HOUR_OF_DAY);
@@ -14,19 +14,19 @@ class MyTime {
         this.second = calendar.get(Calendar.SECOND);
     }
 
-    // Конструктор, который создает объект типа MyTime с указанным временем в миллисекундах
+
     public MyTime(long elapseTime) {
         setTime(elapseTime);
     }
 
-    // Конструктор, который создает объект типа MyTime с указанными часами, минутами и секундами
+
     public MyTime(int hour, int minute, int second) {
         this.hour = hour;
         this.minute = minute;
         this.second = second;
     }
 
-    // Getter-методы
+
     public int getHour() {
         return hour;
     }
@@ -39,7 +39,7 @@ class MyTime {
         return second;
     }
 
-    // Метод для установки времени с помощью прошедшего времени
+
     public void setTime(long elapseTime) {
         long totalSeconds = elapseTime / 1000;
         this.second = (int) (totalSeconds % 60);
